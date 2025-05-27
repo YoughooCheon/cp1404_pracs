@@ -20,7 +20,6 @@ run main
 """
 MIN_LENGTH = 6
 
-
 def main():
     password = get_password()
     print_asterisks(password)
