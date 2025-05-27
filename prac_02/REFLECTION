@@ -1,0 +1,30 @@
+What percentage of the lecture videos have you watched so far?
+80%
+I have watched most of the lecture videos, especially the ones on functions,program structure, and input validation.
+They helped me a lot during the practicals.
+
+What time, location and duration have you scheduled to watch lecture videos?
+I usually watch lecture videos at home right after the class, for about 1 to 1.5 hours.
+This time works well for me because I can review the material immediately, stay focused, and take notes without distractions.
+
+What are you doing well in the subject so far that you will keep doing?
+I am consistently using functions to improve code readability and structure, following the Single Responsibility Principle (SRP).
+In prac_02, I refactored my password_stars.py to use main(), get_password(), and print_asterisks(),
+and reused functions like get_result(score) and show_stars(score) in score_menu.py.
+I will keep breaking tasks into logical, testable functions.
+
+What do you need to stop or change in your work for this subject overall so far?
+I need to stop relying on trial-and-error coding and start planning with pseudocode first.
+Sometimes I rush into writing code without thinking about the logic.
+I will begin by clearly writing pseudocode and planning the function responsibilities before implementing.
+
+What are you currently doing poorly for practicals in this subject that you will change?
+I tend to skip using version control properly.
+I should commit more frequently using meaningful messages like “Refactor password program into functions” or “Add input validation for score”.
+This will help me track my progress better and follow industry practices.
+
+What are you doing really well for practicals in this subject?
+I am getting better at reusing functions and writing clean, reusable code.
+For example, in score_menu.py, I reused my get_result(score) function from score.py instead of writing the logic again.
+I also separated logic into specific functions like get_valid_score(), show_stars(score), and used a proper main menu structure with a loop.
+These practices make my programs more maintainable and readable.
