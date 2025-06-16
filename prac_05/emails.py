@@ -36,3 +36,23 @@ function extract_name(email):
 
 start program by calling main
 """
+def main():
+    """Main function to collect emails and names and store them in a dictionary."""
+    email_to_name = {}
+
+    while True:
+        email = input("Email: ").strip()
+        if not email:
+            break
+
+        name = extract_name(email)
+        confirmation = input(f"Is your name {name}? (Y/n) ").strip().lower()
+
+        if confirmation == 'n':
+            name = input("Name: ").strip()
+
+        email_to_name[email] = name
+
+    print("\nStored emails and names:")
+    for email, name in email_to_name.items():
+        print(f"{name} ({email})")
