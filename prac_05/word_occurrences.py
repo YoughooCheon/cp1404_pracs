@@ -27,3 +27,20 @@ function print_word_counts(word_counts)
 
 main()
 """
+
+def main():
+    """Get user input, count word occurrences, and print results."""
+    text = input("Enter text: ")
+    word_counts = count_word_occurrences(text)
+    print_word_counts(word_counts)
+
+def count_word_occurrences(text):
+    """Return a dictionary with word counts from the input text."""
+    word_counts = {}
+    words = text.split()
+
+    for word in words:
+        word_counts[word] = word_counts.get(word, 0) + 1
+
+    return word_counts
+
