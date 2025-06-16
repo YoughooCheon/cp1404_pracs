@@ -1,8 +1,6 @@
 """
 CP1404/CP5632 Practical
 Word Occurrences
-Estimated time: 20 minutes
-Actual time: (record your actual time)
 
 function main
     get text input from user
