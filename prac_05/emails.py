@@ -56,3 +56,13 @@ def main():
     print("\nStored emails and names:")
     for email, name in email_to_name.items():
         print(f"{name} ({email})")
+
+def extract_name(email):
+    """Extract a properly capitalized name from an email address."""
+    local_part = email.split('@')[0]
+    parts = local_part.split('.')
+    name_parts = [part.capitalize() for part in parts]
+    return " ".join(name_parts)
+
+if __name__ == "__main__":
+    main()
