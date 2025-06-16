@@ -44,3 +44,13 @@ def count_word_occurrences(text):
 
     return word_counts
 
+def print_word_counts(word_counts):
+    """Print word counts sorted alphabetically with aligned formatting."""
+    sorted_words = sorted(word_counts.items())
+    max_length = max(len(word) for word in word_counts.keys())
+
+    for word, count in sorted_words:
+        print(f"{word:{max_length}} : {count}")
+
+if __name__ == "__main__":
+    main()
