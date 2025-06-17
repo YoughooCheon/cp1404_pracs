@@ -25,6 +25,7 @@ function print_word_counts(word_counts)
 
 main()
 """
+
 def main():
     """Get user input, count word occurrences, and print results."""
     text = input("Enter text: ")
