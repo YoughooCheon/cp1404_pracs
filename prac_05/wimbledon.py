@@ -43,3 +43,40 @@ function extract_countries(data)
 
 main()
 """
+def main():
+    """Main function to process and display Wimbledon champions."""
+    filename = "wimbledon.csv"
+    data = read_wimbledon_data(filename)
+
+    champions = count_champions(data)
+    countries_str, countries_count = extract_countries(data)
+
+    print("Wimbledon Champions:")
+    for champ, wins in sorted(champions.items()):
+        print(f"{champ} {wins}")
+
+    print(f"\nThese {countries_count} countries have won Wimbledon:")
+    print(countries_str)
+
+def read_wimbledon_data(filename):
+    """Read Wimbledon champions data from CSV and return a list of lists."""
+    with open(filename, "r", encoding="utf-8-sig") as file:
+        return [line.strip().split(",") for line in file.readlines()[1:]]
+
+def count_champions(data):
+    """Process data to count Wimbledon champions."""
+    champions = {}
+    for entry in data:
+        name = entry[2]  # Champion's name (3rd column)
+        champions[name] = champions.get(name, 0) + 1
+    return champions
+
+def extract_countries(data):
+    """Extract unique countries of champions, sort, and return string and count."""
+    countries = {entry[1] for entry in data}  # Champion's country (2nd column)
+    sorted_countries = sorted(countries)
+    countries_str = ", ".join(sorted_countries)
+    return countries_str, len(countries)
+
+if __name__ == "__main__":
+    main()
