@@ -35,7 +35,6 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty
 from kivy.uix.button import Button
 
-
 class KivyDemo(App):
     """Kivy program to demo some basic interactive functionality."""
     status_text = StringProperty("Hello. Click the buttons :)")
@@ -64,7 +63,6 @@ class KivyDemo(App):
         """Handle presses on the up/down buttons to change counter."""
         self.counter += amount
         self.status_text = f"The count is: {self.counter}"
-
 
 # Create an instance of the KivyDemo class and start the App running
 KivyDemo().run()
