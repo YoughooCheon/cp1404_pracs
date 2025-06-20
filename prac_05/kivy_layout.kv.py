@@ -37,6 +37,7 @@ from kivy.properties import StringProperty
 from kivy.uix.button import Button
 
 def main():
+    """Entry point of the program: runs the KivyDemo app."""
     KivyDemo().run()
 
 class KivyDemo(App):
