@@ -31,7 +31,6 @@ end function
 if this file is main program then
     main
 """
-
 HEX_COLOURS = {"red3": "#cd0000", "black": "#000000", "brass": "#b5a642", "brilliantrose": "#ff55a3", "citron": "#9fa91f", "cornflowerblue": "#6495ed", "darkbyzantium": "#5d3954", "dutchwhite": "#efdfbb", "goldenrod": "#daa520", "indigo": "#4b0082"}
 
 def main():
