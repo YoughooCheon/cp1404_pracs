@@ -30,7 +30,6 @@ class kivydemo (inherits from app)
         add amount to counter
         update status_text to "the count is: {counter}"
 """
-
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.properties import StringProperty
