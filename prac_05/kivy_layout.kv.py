@@ -36,10 +36,8 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty
 from kivy.uix.button import Button
 
-
 def main():
     KivyDemo().run()
-
 
 class KivyDemo(App):
     """Kivy program to demo some basic interactive functionality."""
