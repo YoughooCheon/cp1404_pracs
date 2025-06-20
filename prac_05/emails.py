@@ -36,7 +36,6 @@ function extract_name(email):
 
 start program by calling main
 """
-
 def main():
     """Main function to collect emails and names and store them in a dictionary."""
     email_to_name = {}
