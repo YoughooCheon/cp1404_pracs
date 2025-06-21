@@ -30,7 +30,6 @@ print greater_than_nine
 define string last_names as last names from full_names longer than 11 characters joined by ', '
 print last_names
 """
-
 names = ["Bob", "Angel", "Jimi", "Alan", "Ada"]
 full_names = ["Bob Martin", "Angel Harlem", "Jimi Hendrix", "Alan Turing", "Ada Lovelace"]
 
