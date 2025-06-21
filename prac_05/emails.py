@@ -1,6 +1,7 @@
 """
 CP1404/CP5632 Practical
 Emails and Names Dictionary
+URL: https://github.com/YoughooCheon/cp1404_pracs/blob/master/prac_05/emails.py
 
 function main:
     create empty dictionary email_to_name
