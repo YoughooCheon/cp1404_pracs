@@ -1,6 +1,7 @@
 """
 CP1404/CP5632 Practical
 Word Occurrences
+URL: https://github.com/YoughooCheon/cp1404_pracs/blob/master/prac_05/word_occurrences.py
 
 function main
     get text input from user

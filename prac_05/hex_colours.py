@@ -2,6 +2,7 @@
 CP1404/CP5632 Practical
 State names and hex colours in dictionaries
 File needs reformatting
+URL: https://github.com/YoughooCheon/cp1404_pracs/blob/master/prac_05/hex_colours.py
 
 hex_colours = {"red3": "#cd0000", "black": "#000000", "brass": "#b5a642", "brilliantrose": "#ff55a3", "citron": "#9fa91f", "cornflowerblue": "#6495ed", "darkbyzantium": "#5d3954", "dutchwhite": "#efdfbb", "goldenrod": "#daa520", "indigo": "#4b0082"}
 

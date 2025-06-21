@@ -1,6 +1,7 @@
 """
 CP1404/CP5632 Practical
 Kivy_layout
+URL: https://github.com/YoughooCheon/cp1404_pracs/blob/master/prac_05/kivy_layout.kv.py
 
 function main
     create kivydemo instance
