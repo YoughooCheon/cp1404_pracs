@@ -1,15 +1,25 @@
 """
-Estimate time: 15 minutes
-Start time: 2025-07-03 14:00
+class programminglanguage
 
-This module defines the ProgrammingLanguage class, which stores basic information
-about a programming language including its typing discipline, whether it supports
-reflection, and the year it first appeared.
+  function __init__(name, typing, reflection, year)
+    set self.name to name
+    set self.typing to typing
+    set self.reflection to reflection
+    set self.year to year
 
-Actual time: 12 minutes
+  function is_dynamic()
+    if lowercase(self.typing) == "dynamic"
+      return true
+    else
+      return false
+
+  function __str__()
+    return string:
+      self.name + ", " + self.typing + " Typing, Reflection=" + self.reflection + ", First appeared in " + self.year
+
 """
-
 class ProgrammingLanguage:
+
     def __init__(self, name, typing, reflection, year):
         """Initialize the ProgrammingLanguage object with given parameters."""
         self.name = name
@@ -23,4 +33,5 @@ class ProgrammingLanguage:
 
     def __str__(self):
         """Return a string representation of the programming language."""
-        return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, First appeared in {self.year}"
+        return (f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, "
+                f"First appeared in {self.year}")
