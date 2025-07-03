@@ -1,24 +1,39 @@
 """
-Estimate time: 10 minutes
-Start time: 2025-07-03 14:12
+import programminglanguage from programming_language
 
-This script uses the ProgrammingLanguage class to create instances of several
-languages and prints details about them, especially those that use dynamic typing.
+function main()
+  create python as ProgrammingLanguage("Python", "Dynamic", true, 1991)
+  create ruby as ProgrammingLanguage("Ruby", "Dynamic", true, 1995)
+  create visual_basic as ProgrammingLanguage("Visual Basic", "Static", false, 1991)
 
-Actual time: 8 minutes
+  print python
+
+  create list languages containing python, ruby, visual_basic
+
+  print "The dynamically typed languages are:"
+  for each language in languages
+    if language.is_dynamic() is true
+      print language.name
+
+if this script is the main program being run
+  main()
 """
-
 from programming_language import ProgrammingLanguage
 
-python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
-ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
-visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
+def main():
+    """Create and display programming languages and show dynamically typed ones."""
+    python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
+    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
+    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
 
-print(python)
+    print(python)
 
-languages = [python, ruby, visual_basic]
+    languages = [python, ruby, visual_basic]
 
-print("\nThe dynamically typed languages are:")
-for language in languages:
-    if language.is_dynamic():
-        print(language.name)
+    print("The dynamically typed languages are:")
+    for language in languages:
+        if language.is_dynamic():
+            print(language.name)
+
+if __name__ == "__main__":
+    main()
