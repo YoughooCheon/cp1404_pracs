@@ -1,21 +1,31 @@
 """
-Estimate time: 5 minutes
-Start time: 2025-07-03 15:13
+import Guitar class from guitar module
 
-Tests the Guitar class's get_age() and is_vintage() methods.
+function main()
+  create gibson as Guitar("Gibson L-5 CES", 1922, 16035.40)
+  create another as Guitar("Another Guitar", 2013, 500)
 
-Actual time: 4 minutes
+  print "Gibson L-5 CES get_age() - Expected 102. Got actual age from get_age()"
+  print "Another Guitar get_age() - Expected 11. Got actual age from get_age()"
+
+  print "Gibson L-5 CES is_vintage() - Expected True. Got actual result from is_vintage()"
+  print "Another Guitar is_vintage() - Expected False. Got actual result from is_vintage()"
+
+if this script is the main program being run
+  main()
 """
-
 from guitar import Guitar
 
-CURRENT_YEAR = 2025
+def main():
+    """Test Guitar class methods: get_age() and is_vintage()."""
+    gibson = Guitar("Gibson L-5 CES", 1922, 16035.40)
+    another = Guitar("Another Guitar", 2013, 500)
 
-guitar1 = Guitar("Gibson L-5 CES", 1925, 16035.40)
-guitar2 = Guitar("Another Guitar", 2016, 500.00)
+    print(f"{gibson.name} get_age() - Expected 102. Got {gibson.get_age()}")
+    print(f"{another.name} get_age() - Expected 11. Got {another.get_age()}")
 
-print(f"{guitar1.name} get_age() - Expected {CURRENT_YEAR - 1925}. Got {guitar1.get_age()}")
-print(f"{guitar2.name} get_age() - Expected {CURRENT_YEAR - 2016}. Got {guitar2.get_age()}")
+    print(f"{gibson.name} is_vintage() - Expected True. Got {gibson.is_vintage()}")
+    print(f"{another.name} is_vintage() - Expected False. Got {another.is_vintage()}")
 
-print(f"{guitar1.name} is_vintage() - Expected True. Got {guitar1.is_vintage()}")
-print(f"{guitar2.name} is_vintage() - Expected False. Got {guitar2.is_vintage()}")
+if __name__ == "__main__":
+    main()
