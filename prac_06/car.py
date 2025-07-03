@@ -1,3 +1,26 @@
+"""
+class car
+
+  function __init__(name="", fuel=0)
+    set name
+    set fuel
+    set odometer to 0
+
+  function add_fuel(amount)
+    add amount to fuel
+
+  function drive(distance)
+    if distance > fuel
+      set distance to fuel
+      set fuel to 0
+    else
+      subtract distance from fuel
+    add distance to odometer
+    return distance
+
+  function __str__()
+    return "name, fuel=fuel, odometer=odometer"
+"""
 class Car:
 
     def __init__(self, name="", fuel=0):
