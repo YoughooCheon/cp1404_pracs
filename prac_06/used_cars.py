@@ -1,3 +1,17 @@
+"""
+import car from car.py
+
+function main()
+  create car object limo with name "limo" and fuel 100
+  add 20 fuel to limo
+  print limo's fuel
+  drive limo 115 km and store distance driven
+  print distance driven
+  print limo
+
+if this file is the main program
+  main()
+"""
 from car import Car
 
 def main():
