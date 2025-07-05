@@ -23,6 +23,5 @@ def main():
     print(f"Limo drove {distance_driven}km.")
     print(limo)
 
-
 if __name__ == "__main__":
     main()

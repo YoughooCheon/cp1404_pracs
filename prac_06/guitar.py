@@ -20,6 +20,7 @@ class Guitar
     return "name (year) : $cost" formatted with 2 decimal places and commas
 """
 class Guitar:
+
     def __init__(self, name="", year=0, cost=0):
         """Initialize a Guitar instance with name, year, and cost."""
         self.name = name
