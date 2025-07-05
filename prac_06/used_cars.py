@@ -12,6 +12,7 @@ function main()
 if this file is the main program
   main()
 """
+
 from car import Car
 
 def main():

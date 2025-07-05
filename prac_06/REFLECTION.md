@@ -25,4 +25,3 @@ Also, I want to reduce last-minute fixes and adopt a more steady pace throughout
 What is one request you have or change you suggest for this subject and/or your IT degree overall?
 
 I suggest including more real-world project scenarios across subjects to better prepare students for practical challenges after graduation.
-

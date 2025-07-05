@@ -25,6 +25,7 @@ function main()
 if this script is the main program being run
   main()
 """
+
 from guitar import Guitar
 
 def main():
