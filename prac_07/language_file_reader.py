@@ -1,4 +1,8 @@
 """
+import module csv
+import namedtuple from collections
+import programminglanguage class from programming_language
+
 function main():
     languages = []
     open file 'languages.csv' for reading as in_file
