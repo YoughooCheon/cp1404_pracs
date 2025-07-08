@@ -1,5 +1,55 @@
 """
+import module csv
+import guitar class from guitar
 
+function main():
+    filename = 'guitars.csv'
+    guitars = load_guitars(filename)
+
+    print "these are my guitars:"
+    display_guitars(guitars)
+
+    sort guitars by year (using guitar_less_than)
+    print "\nguitars sorted by year:"
+    display_guitars(guitars)
+
+    print "\nadd a new guitar:"
+    new_guitar = add_guitar()
+    append new_guitar to guitars
+
+    save_guitars(filename, guitars)
+    print "\nupdated guitar list saved to file."
+
+function load_guitars(filename):
+    guitars = []
+    open file filename for reading as file
+    create csv reader from file
+    for each row in reader:
+        name, year, cost = unpack row
+        create guitar object with name, int(year), float(cost)
+        append guitar to guitars
+    close file
+    return guitars
+
+function display_guitars(guitars):
+    for each guitar in guitars:
+        print guitar_to_string(guitar)
+
+function add_guitar():
+    name = input "name: "
+    year = int(input "year: ")
+    cost = float(input "cost: ")
+    return create_guitar(name, year, cost)
+
+function save_guitars(filename, guitars):
+    open file filename for writing as file
+    create csv writer from file
+    for each guitar in guitars:
+        write row [guitar.name, guitar.year, guitar.cost]
+    close file
+
+if program is main:
+    main()
 """
 import csv
 from guitar import Guitar

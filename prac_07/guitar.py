@@ -1,5 +1,19 @@
 """
+function Guitar
 
+function create_guitar(name, year, cost):
+    guitar = {
+        "name": name,
+        "year": year,
+        "cost": cost
+    }
+    return guitar
+
+function guitar_to_string(guitar):
+    return guitar["name"] + " (" + str(guitar["year"]) + ") : $" + format(guitar["cost"], ".2f")
+
+function guitar_less_than(guitar1, guitar2):
+    return guitar1["year"] < guitar2["year"]
 """
 class Guitar:
     """Represent a Guitar with name, year, and cost."""
