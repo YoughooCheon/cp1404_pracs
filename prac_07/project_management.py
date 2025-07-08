@@ -1,5 +1,110 @@
 """
+import project class from project
+import module datetime
 
+constant filename = "projects.txt"
+
+function main():
+    print "welcome to pythonic project management"
+    projects = load_projects(filename)
+    print "loaded", length of projects, "projects from", filename
+
+    menu = "- (l)oad projects\n- (s)ave projects\n- (d)isplay projects\n- (f)ilter projects by date\n- (a)dd new project\n- (u)pdate project\n- (q)uit"
+
+    print menu
+    choice = get user input and convert to lowercase
+
+    while choice is not 'q':
+        if choice is 'l':
+            input filename from user
+            projects = load_projects(filename)
+        else if choice is 's':
+            input filename from user
+            save_projects(projects, filename)
+        else if choice is 'd':
+            display_projects(projects)
+        else if choice is 'f':
+            filter_projects_by_date(projects)
+        else if choice is 'a':
+            add_new_project(projects)
+        else if choice is 'u':
+            update_project(projects)
+        else:
+            print "invalid choice"
+        print menu
+        choice = get user input and convert to lowercase
+
+    ask user if they want to save to default filename
+    if yes:
+        save_projects(projects, filename)
+    else:
+        print "no save performed"
+    print "thank you for using custom-built project management software"
+
+function load_projects(filename):
+    open file for reading
+    skip header line
+    projects = []
+    for each line in file:
+        split line by tab
+        if 5 parts exist:
+            create project using parts
+            add to projects list
+    close file
+    return projects
+
+function save_projects(projects, filename):
+    open file for writing
+    write header line
+    for each project in projects:
+        write project.to_tab_delimited() to file
+    close file
+
+function display_projects(projects):
+    incomplete = filter projects where not is_complete
+    complete = filter projects where is_complete
+    sort both lists by priority
+
+    print "incomplete projects:"
+    for each project in incomplete:
+        print project
+
+    print "completed projects:"
+    for each project in complete:
+        print project
+
+function filter_projects_by_date(projects):
+    input date string from user
+    try:
+        convert date string to date
+        filtered = filter projects where start_date > filter_date
+        sort filtered by start_date
+        for each project in filtered:
+            print project
+    except:
+        print "invalid date format"
+
+function add_new_project(projects):
+    print "let's add a new project"
+    input name, date string, priority, cost, percent_complete
+    convert date string to date
+    create project using inputs
+    append project to projects list
+
+function update_project(projects):
+    for index, project in projects:
+        print index and project
+    try:
+        input index from user
+        project = projects[index]
+        print project
+        input new percent_complete and priority (optional)
+        if given, update project attributes
+    except:
+        print "invalid project choice"
+
+if this is the main program:
+    main()
 """
 from project import Project
 import datetime
