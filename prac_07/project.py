@@ -1,5 +1,29 @@
 """
+import module datetime
 
+function create_project(name, start_date, priority, cost_estimate, percent_complete):
+    if start_date is string:
+        start_date = parse start_date using format "dd/mm/yyyy"
+    project = {
+        "name": name,
+        "start_date": start_date,
+        "priority": to_integer(priority),
+        "cost_estimate": to_float(cost_estimate),
+        "percent_complete": to_integer(percent_complete)
+    }
+    return project
+
+function is_complete(project):
+    return project["percent_complete"] == 100
+
+function project_less_than(project1, project2):
+    return project1["priority"] < project2["priority"]
+
+function project_to_string(project):
+    return project["name"] + ", start: " + format_date(project["start_date"], "dd/mm/yyyy") + ", priority " + str(project["priority"]) + ", estimate: $" + format_number(project["cost_estimate"], 2) + ", completion: " + str(project["percent_complete"]) + "%"
+
+function project_to_tab_delimited(project):
+    return project["name"] + "\t" + format_date(project["start_date"], "dd/mm/yyyy") + "\t" + str(project["priority"]) + "\t" + str(project["cost_estimate"]) + "\t" + str(project["percent_complete"])
 """
 import datetime
 
