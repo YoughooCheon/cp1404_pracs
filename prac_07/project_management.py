@@ -106,6 +106,7 @@ function update_project(projects):
 if this is the main program:
     main()
 """
+
 from project import Project
 import datetime
 
@@ -212,7 +213,6 @@ def add_new_project(projects):
     percent_complete = int(input("Percent complete: "))
     project = Project(name, start_date, priority, cost_estimate, percent_complete)
     projects.append(project)
-
 
 def update_project(projects):
     """Prompt user to choose a project and update its completion or priority."""
