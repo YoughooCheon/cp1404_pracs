@@ -15,6 +15,7 @@ function guitar_to_string(guitar):
 function guitar_less_than(guitar1, guitar2):
     return guitar1["year"] < guitar2["year"]
 """
+
 class Guitar:
     """Represent a Guitar with name, year, and cost."""
 

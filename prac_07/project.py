@@ -25,6 +25,7 @@ function project_to_string(project):
 function project_to_tab_delimited(project):
     return project["name"] + "\t" + format_date(project["start_date"], "dd/mm/yyyy") + "\t" + str(project["priority"]) + "\t" + str(project["cost_estimate"]) + "\t" + str(project["percent_complete"])
 """
+
 import datetime
 
 class Project:

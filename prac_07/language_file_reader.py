@@ -78,7 +78,7 @@ def main():
 def using_csv():
     """Language file reader version using the csv module."""
     with open('languages.csv', 'r', newline='') as in_file:
-        next(in_file)  # skip header
+        next(in_file)
         reader = csv.reader(in_file)
         for row in reader:
             print(row)
