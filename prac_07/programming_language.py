@@ -34,6 +34,7 @@ function main():
 
 main()
 """
+
 class ProgrammingLanguage:
     """Represent information about a programming language."""
 
