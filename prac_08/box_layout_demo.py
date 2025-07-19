@@ -21,18 +21,20 @@ from kivy.app import App
 from kivy.lang import Builder
 
 class BoxLayoutDemo(App):
+    """Kivy app that greets the user based on input."""
+
     def build(self):
-        """loads the UI from the kv file and returns it as the root widget"""
+        """Load the UI from the KV file and return it."""
         self.root = Builder.load_file('box_layout.kv')
         return self.root
 
     def handle_greet(self):
-        """gets user input and displays a greeting message"""
+        """Display a greeting using the input name."""
         name = self.root.ids.input_name.text
         self.root.ids.output_label.text = f"Hello {name}"
 
     def handle_clear(self):
-        """clears the input field and the output label"""
+        """Clear both input and output fields."""
         self.root.ids.input_name.text = ''
         self.root.ids.output_label.text = ''
 

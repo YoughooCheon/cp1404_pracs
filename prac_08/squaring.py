@@ -23,13 +23,17 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 
 class SquareNumberApp(App):
+    """Kivy app to square a number."""
+
     def build(self):
+        """Build the UI from KV file."""
         Window.size = (300, 150)
         self.title = "Square Number"
         self.root = Builder.load_file('squaring.kv')
         return self.root
 
     def handle_calculate(self, value):
+        """Calculate square of input value and display result."""
         try:
             result = float(value) ** 2
             self.root.ids.output_label.text = str(result)
