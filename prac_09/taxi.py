@@ -1,3 +1,6 @@
+"""
+
+"""
 class Car:
     """A simple car class with fuel and odometer."""
 

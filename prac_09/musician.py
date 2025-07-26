@@ -1,6 +1,6 @@
-"""Musician class for CP1404"""
+"""
 
-
+"""
 class Musician:
     """Musician class"""
 
@@ -26,7 +26,6 @@ class Musician:
         if not self.instruments:
             return f"{self.name} needs an instrument!"
         return f"{self.name} is playing: {self.instruments[0]}"
-
 
 if __name__ == '__main__':
     from guitar import Guitar

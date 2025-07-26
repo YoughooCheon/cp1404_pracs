@@ -1,8 +1,9 @@
-"""Band example with list of musicians."""
+"""
+
+"""
 from band import Band
 from musician import Musician
 from guitar import Guitar
-
 
 def main():
     band = Band("Extreme")
@@ -21,6 +22,5 @@ def main():
     print(band)
     print("band.play()")
     print(band.play())
-
 
 main()

@@ -5,7 +5,9 @@ from taxi import Taxi
 from silver_service_taxi import SilverServiceTaxi
 
 def main():
+    """Run the interactive taxi simulator program."""
     print("Let's drive!")
+
     taxis = [Taxi("Prius", 100),
              SilverServiceTaxi("Limo", 100, 2),
              SilverServiceTaxi("Hummer", 200, 4)]
@@ -18,8 +20,10 @@ def main():
     while True:
         print(MENU)
         choice = input(">>> ").lower()
+
         if choice == 'q':
             break
+
         elif choice == 'c':
             print("Taxis available:")
             for i, taxi in enumerate(taxis):
@@ -32,6 +36,7 @@ def main():
                     print("Invalid taxi choice")
             except ValueError:
                 print("Invalid taxi choice")
+
         elif choice == 'd':
             if current_taxi is None:
                 print("You need to choose a taxi before you can drive")
@@ -48,6 +53,7 @@ def main():
                     total_bill += trip_cost
                 except ValueError:
                     print("Invalid distance")
+
         else:
             print("Invalid option")
 

@@ -19,6 +19,5 @@ def test_silver_service_taxi():
     print("\nTaxi __str__:")
     print(taxi)
 
-
 if __name__ == "__main__":
     test_silver_service_taxi()
