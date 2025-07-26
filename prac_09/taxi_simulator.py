@@ -1,5 +1,63 @@
 """
+function main():
+    print "Let's drive!"
 
+    create list of taxis:
+        - taxi named "Prius" with 100 fuel
+        - silverservicetaxi named "Limo" with 100 fuel and fanciness 2
+        - silverservicetaxi named "Hummer" with 200 fuel and fanciness 4
+
+    set current_taxi to None
+    set total_bill to 0
+
+    define menu options: "q)uit, c)hoose taxi, d)rive"
+
+    loop forever:
+        print menu
+        get user input choice (lowercase)
+
+        if choice is 'q':
+            break loop
+
+        else if choice is 'c':
+            print available taxis with indices
+            try:
+                get user input taxi_choice as integer
+                if taxi_choice valid index:
+                    set current_taxi to chosen taxi
+                else:
+                    print "Invalid taxi choice"
+            except invalid input:
+                print "Invalid taxi choice"
+
+        else if choice is 'd':
+            if current_taxi is None:
+                print "You need to choose a taxi before you can drive"
+            else:
+                try:
+                    get user input distance as float
+                    if distance < 0:
+                        print "Distance must be >= 0"
+                        continue loop
+                    current_taxi start new fare
+                    drive current_taxi by distance
+                    get trip cost from current_taxi
+                    print trip cost formatted
+                    add trip cost to total_bill
+                except invalid input:
+                    print "Invalid distance"
+
+        else:
+            print "Invalid option"
+
+        print bill to date formatted
+
+    print total trip cost formatted
+    print "Taxis are now:"
+    print each taxi with index
+
+if running as main program:
+    main()
 """
 from taxi import Taxi
 from silver_service_taxi import SilverServiceTaxi

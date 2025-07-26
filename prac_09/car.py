@@ -1,5 +1,27 @@
 """
+class car:
+    description: represents a car with a name, fuel amount, and odometer reading.
 
+    function __init__(name, fuel):
+        set car's name
+        set car's fuel level
+        initialize odometer to 0
+
+    function __str__():
+        return a string containing the car's name, fuel, and odometer
+
+    function add_fuel(amount):
+        increase fuel by the given amount
+
+    function drive(distance):
+        if distance > available fuel:
+            only drive as far as fuel allows
+            set fuel to 0
+        else:
+            subtract distance from fuel
+
+        add actual driven distance to odometer
+        return actual distance driven
 """
 class Car:
     """Represent a Car object."""

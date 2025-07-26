@@ -1,5 +1,37 @@
 """
+class musician:
+    description: represents a musician with a name and a collection of instruments.
 
+    function __init__(name):
+        set musician's name
+        initialize instruments as empty list
+
+    function __str__():
+        return string showing musician's name and instruments list
+
+    function __repr__():
+        return string representation of musician's instance variables
+
+    function add(instrument):
+        add the instrument to the musician's instruments list
+
+    function play():
+        if instruments list is empty:
+            return message that musician needs an instrument
+        else:
+            return string stating musician is playing the first instrument in the list
+
+main block:
+    import Guitar class
+
+    create musician instance
+    check musician's name is empty string
+    check musician's instruments list is empty
+
+    set musician's name
+    add two Guitar instances to musician's instruments list
+    print musician's info
+    print musician playing their instrument
 """
 class Musician:
     """Musician class"""

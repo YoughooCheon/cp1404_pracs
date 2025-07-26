@@ -1,5 +1,21 @@
 """
+function test_silver_service_taxi():
+    description: test the fare calculation and string output of a SilverServiceTaxi
 
+    create silver_service_taxi named "Hummer" with 200 fuel and fanciness 2
+    start fare calculation
+    drive taxi for 18 kilometers
+    get the fare
+
+    print expected fare message
+    print actual fare formatted to 2 decimals
+    assert that fare is approximately 48.78 within a margin of 0.05
+
+    print label for taxi string output
+    print taxi's string representation
+
+if running as main program:
+    call test_silver_service_taxi()
 """
 from silver_service_taxi import SilverServiceTaxi
 

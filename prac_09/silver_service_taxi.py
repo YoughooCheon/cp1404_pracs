@@ -1,5 +1,19 @@
 """
+class silverservicetaxi (inherits from taxi):
+    description: specialised taxi with fanciness factor and fixed flagfall charge.
 
+    class variable flagfall = 4.50
+
+    function __init__(name, fuel, fanciness):
+        call parent taxi __init__ with name and fuel
+        set fanciness level
+        set price_per_km by scaling parent's price_per_km by fanciness
+
+    function get_fare():
+        return parent's fare calculation plus flagfall charge
+
+    function __str__():
+        return parent's string representation plus formatted flagfall info
 """
 from taxi import Taxi
 

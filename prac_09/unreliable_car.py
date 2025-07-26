@@ -1,5 +1,17 @@
 """
+class unreliablecar inherits from car:
+    description: car that might not drive depending on reliability.
 
+    function __init__(name, fuel, reliability):
+        call car's __init__ with name and fuel
+        set reliability attribute (0-100)
+
+    function drive(distance):
+        generate random chance between 0 and 100
+        if chance < reliability:
+            return parent's drive(distance)
+        else:
+            return 0 (did not drive)
 """
 import random
 from car import Car

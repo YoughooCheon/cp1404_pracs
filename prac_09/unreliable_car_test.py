@@ -1,5 +1,34 @@
 """
+import unreliablecar class
 
+function test_unreliable_car():
+    create reliable_car with reliability 100
+    create unreliable_car with reliability 0
+    create semi_reliable_car with reliability 50
+
+    total_distance = 0
+    repeat 10 times:
+        add reliable_car.drive(10) to total_distance
+    print "reliable car drove:", total_distance
+    assert total_distance == 100
+
+    total_distance = 0
+    repeat 10 times:
+        add unreliable_car.drive(10) to total_distance
+    print "unreliable car drove:", total_distance
+    assert total_distance == 0
+
+    set drive_attempts to 100
+    set distance_each_attempt to 1
+    total_distance = 0
+    create semi_reliable_car with reliability 30
+    repeat drive_attempts times:
+        add semi_reliable_car.drive(distance_each_attempt) to total_distance
+    print "semi-reliable car drove:", total_distance
+    assert total_distance is approximately 30% of drive_attempts
+
+if this module is main:
+    call test_unreliable_car()
 """
 from unreliable_car import UnreliableCar
 

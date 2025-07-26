@@ -1,5 +1,26 @@
 """
+class guitar:
+    description: stores details of a guitar including name, year, and cost.
 
+    function __init__(name, year, cost):
+        set guitar's name
+        set guitar's year of manufacture
+        set guitar's cost
+
+    function __str__():
+        return a formatted string with name, year, and cost
+
+    function __repr__():
+        return string representation (same as __str__)
+
+    function get_age():
+        calculate and return guitar's age using current year constant
+
+    function is_vintage():
+        return true if guitar's age is greater than or equal to vintage age constant
+
+    function __lt__(other):
+        return true if this guitar's year is less than the other guitar's year (for sorting)
 """
 CURRENT_YEAR = 2022
 VINTAGE_AGE = 50
