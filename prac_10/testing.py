@@ -1,3 +1,27 @@
+"""
+function repeat_string takes a string and a number
+    return the string repeated with spaces in between
+
+function is_long_word takes a word and an optional length (default is 5)
+    return true if the length of the word is greater than or equal to the given length
+
+function format_phrase takes a phrase
+    remove leading and trailing spaces and capitalize the first letter
+    if the phrase does not end with a period
+        add a period to the end
+    return the formatted phrase
+
+function run_tests
+    check if repeating "hi" two times gives "hi hi"
+    create a car object with default fuel
+    check if its fuel is 0
+    check if its odometer is 0
+    create another car object with fuel set to 50
+    check if its fuel is 50
+
+run the run_tests function
+run the doctest module to test functions using embedded test cases
+"""
 import doctest
 from prac_06.car import Car
 

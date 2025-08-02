@@ -1,3 +1,22 @@
+"""
+function main
+    print a message saying wikipedia search tool
+    repeat forever
+        ask the user to enter a page title
+        if the title is empty
+            print thank you and break the loop
+        try to get the wikipedia page with the given title without auto suggestion
+            print the page title, summary, and url
+        if there is a disambiguation error
+            tell the user to be more specific and show the options
+        if there is a page error
+            tell the user the page was not found
+        if any other unexpected error occurs
+            print the error message
+
+if the program is run directly
+    main()
+"""
 import wikipedia
 
 def main():
