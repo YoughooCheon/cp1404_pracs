@@ -20,6 +20,9 @@ if the program is run directly
 import wikipedia
 
 def main():
+    """
+    Runs a Wikipedia search tool that fetches and displays page info based on user input.
+    """
     print("Wikipedia Search Tool")
     while True:
         title = input("Enter page title: ")

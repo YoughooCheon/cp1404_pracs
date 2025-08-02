@@ -26,13 +26,14 @@ import doctest
 from prac_06.car import Car
 
 def repeat_string(s, n):
-    """Repeat string s, n times, with spaces in between."""
+    """
+    repeat the given string s, n times, with spaces in between
+    """
     return ' '.join([s] * n)
 
 def is_long_word(word, length=5):
     """
-    Determine if the word is as long or longer than the length passed in
-
+    determine if the word length is greater than or equal to the given length
     >>> is_long_word("not")
     False
     >>> is_long_word("supercalifrag")
@@ -44,8 +45,7 @@ def is_long_word(word, length=5):
 
 def format_phrase(phrase):
     """
-    Format a phrase as a sentence.
-
+    format the phrase to start with a capital letter and end with a period
     >>> format_phrase("hello")
     'Hello.'
     >>> format_phrase("It is an ex parrot.")
@@ -59,6 +59,9 @@ def format_phrase(phrase):
     return phrase
 
 def run_tests():
+    """
+    run a series of tests for repeat_string, Car class initialization, and odometer values
+    """
     assert repeat_string("hi", 2) == "hi hi"
     car = Car()
     assert car.fuel == 0
