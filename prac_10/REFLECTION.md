@@ -22,7 +22,7 @@ Reviewing others’ work helped me identify common mistakes and broadened my und
 
 # Good Code Review 1
 
-PR Link: 
+PR Link: https://github.com/YoughooCheon/cp1404_pracs/tree/master/prac_06
 
 Explanation:  
 I offered detailed suggestions on input sanitization and added comments to clarify complex logic,
@@ -30,7 +30,7 @@ which enhanced the code’s robustness.
 
 # Good Code Review 2
 
-PR Link: 
+PR Link: https://github.com/YoughooCheon/cp1404_pracs/tree/master/prac_08
 
 Explanation:  
 I identified redundant code and recommended modularizing functions to improve maintainability and testability.
